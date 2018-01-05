@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article id="main">
+    <header class="special container">
+        <span class="icon fa-question"></span>
+        <h2>Frequently Asked <strong>Questions</strong></h2>
+    </header>
+    <section class="wrapper style4 container">
+        <ul class="posts">
+          {% for post in site.posts %}
+            {% if post.categories contains 'faq' %}
+              <li class="wrapper {% cycle "style1", "style2" %}">
+                <h2>{{ post.title }}</h2>
+                  {{ post.excerpt }}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+    </section>
+</article>

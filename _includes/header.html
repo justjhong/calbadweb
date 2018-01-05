@@ -1,0 +1,32 @@
+<header id="header">
+				<h1 id="logo"><a href="/">Cal <span>Badminton</span></a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="/">Welcome</a></li>
+            <li><a href="/announcements.html">Announcements</a></li>
+						<li class="submenu">
+							<a href="">More</a>
+							<ul>
+								<li><a href="/meet-officers.html">Meet the Officers</a></li>
+								<li><a href="/faq.html">FAQ</a></li>
+                <li><a href="/queue.html">Queue</a></li>
+							</ul>
+						</li>
+						<li><a href="index.html#signup" id="signupbutton" class="button special">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
+
+      <script>
+        // smooth scroll on all links from dillonyao.tk
+        $(document).ready(function(){
+          $("#signupbutton").on('click', function(event) {
+            if (window.location.hash) {
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: $(window.location.hash).offset().top
+              }, 2000);
+            }
+          });
+        });
+      </script>

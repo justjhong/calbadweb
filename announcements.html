@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article id="main">
+    <header class="special container">
+        <span class="icon fa-bullhorn"></span>
+        <h2>My <strong>Blog</strong></h2>
+    </header>
+    <section class="wrapper style4 container">
+        <ul class="posts">
+          {% for post in site.posts %}
+            {% if post.categories contains 'announcement' %}
+              <li class="wrapper {% cycle "style1", "style2" %}">
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+                {{ post.excerpt }}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+    </section>
+</article>
