@@ -132,7 +132,7 @@ layout: landing-page
                   </form>
                   <script>
                       var contactform =  document.getElementById('formaction');
-                      contactform.setAttribute('action', '//formspree.io/' + 'jjhong922' + '@' + 'gmail' + '.' + 'com');
+                      contactform.setAttribute('action', '//formspree.io/' + 'calbadminton' + '@' + 'gmail' + '.' + 'com');
                   </script>
 								</section>
 
