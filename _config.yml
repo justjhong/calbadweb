@@ -4,7 +4,7 @@ email: jjhong922@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This is the official website for Cal Badminton, UC Berkeley's premier badminton club. Hope to see you on the courts!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://locahost:4000" # the base hostname & protocol for your site
+url: "https://badminton.berkeley.edu" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
